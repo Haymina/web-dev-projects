@@ -1,0 +1,137 @@
+
+
+header{
+  left:0;
+  top:0;
+  right:0;
+  height: 70px;
+  color:white;
+  position: fixed;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  background-color: #181a1b;;
+  border-bottom: 1px, solid black;
+  justify-content: space-between;
+  box-shadow: 1px 1px 1px rgb(132, 126, 126);
+
+}
+.humburger{
+  height: 25px;
+  padding-top: 5px;
+  padding-right: 23px;
+}
+.youtube-logo{
+  height: 27px;
+}
+.middle{
+  display: flex;
+}
+.search-box{
+  height: 30px;
+  width: 300px;
+  padding-right: 90px;
+  border: 1px, solid rgb(55, 46, 46);  
+}
+.voice-search{
+  width: 35px;
+  height: 35px;
+  background-color: rgb(32, 32, 32);
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.voice-search img{
+  width: 30px;
+  height: 30px;
+  padding-left: 2px;
+  padding-top: 2px;
+  
+}
+.search-btn{
+  width: 30px;
+  height: 33px;
+  padding-left: 20px;
+  border: 1px, solid rgb(180, 164, 164);  
+}
+input {
+  font-size: 22px;
+  padding-left: 12px;
+}
+.search-btn img{
+  height: 20px;
+  width:20px;
+  margin-top: 7px;
+  margin-right: 19px; 
+
+}
+.right{
+  display: flex;
+  padding-right: 40px;
+  align-items: center;
+  column-gap: 39px;
+  justify-content: space-evenly;
+}
+.right img{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.sidebar{
+  background-color: #181a1b;;
+  color: white;
+  position:fixed;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  justify-content: space-between;
+  width: 70px;
+  left: 0;
+  bottom:0;
+  top: 50px;
+}
+.sidebar p{
+  font-size: 10px;
+}
+.sidebar div img{
+  width: 25px;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+}
+
+.vedios{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 90px 0px 0 80px;
+  column-gap: 20px;
+   
+}
+.vedios img{
+  width: 280px;
+}
+.video-grid{
+  display: flex;
+}
+.vedio-info{
+  display: grid;
+  grid-template-columns:40px 1fr;
+
+}
+.pp{
+  padding-top: 20px;
+}
+.vedio-info img{
+  width: 30px;
+  border-radius: 50%;
+}
+.vedio-desc{
+
+  display: grid;
+  grid-template-rows: 1fr 40px 40px;
+  row-gap: 4px;
+}
+
+

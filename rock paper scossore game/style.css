@@ -1,0 +1,41 @@
+body{
+  background-color: rgb(0, 0, 0);
+  padding: 10px 0px 3px 19px;
+  color: white;
+  font-family: trirong, sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.symbols{
+  display:flex;
+  flex-direction: row;
+  cursor: pointer;
+  
+}
+.symbols *{
+  border: 2px solid rgba(233, 110, 22,0.5);
+  background-color: rgba(233, 110, 22,0.5);
+  font-size : 50px;
+  border-radius: 50%;
+  margin: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+button{
+  font-family: trirong, sans-serif;
+  background-color: rgb(255, 255, 255);
+  color:black;
+  cursor: pointer;
+  font-weight: 900;
+  font-size:15px;
+  padding:5px;
+  margin: 5px;
+  border: 2px solid rgba(233, 110, 22,0.5);
+}
+button:hover{
+  background-color: rgba(142, 72, 22, 0.284);
+  color: white;
+  box-shadow: 0px 0px 10px rgba(142, 72, 22, 0.284);
+  transition: 0.3s;
+  transform: scale(1.1);
+}

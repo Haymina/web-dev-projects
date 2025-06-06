@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>To do list</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>To-Do List <img src="notebook.png"></h1>
+      <div class="todo-list">
+        <input type="text" id="todo-input" placeholder="Add your task..." required>
+        <button type="submit" id="add">Add</button>
+      </div>
+      <div class="todo-items">
+        <ul id="todo-items-list"></ul>
+      </div>
+    </div>
+  </div>
+  <script>
+
+    const todoInput = document.getElementById('todo-input');
+    const todoButton = document.querySelector('button');
+    const list = document.getElementById('todo-items-list');
+     
+    function addTask(){
+      const task = todoInput.value.trim();
+      if (task !== "") {
+        const li = document.createElement('li');
+        li.textContent = task;
+
+
+        //create delete button
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = "❌";
+        deleteButton.style.marginLeft = "10px";
+        deleteButton.style.cursor ="pointer";
+        deleteButton.style.border = "none";
+        deleteButton.style.fontSize = "10px";
+        deleteButton.style.backgroundColor = "transparent";
+
+        deleteButton.addEventListener("click", () => {
+        li.remove();
+        });
+        list.appendChild(deleteButton);
+        list.appendChild(li);
+        todoInput.value = ""; //clears the input after adding the task 
+      }
+    }
+
+    todoButton.addEventListener('click', addTask)
+
+    //Enter key event
+    todoInput.addEventListener('keydown', (event) =>{
+      if(event.key === 'Enter'){
+        addTask();
+      }
+    })
+  
+  </script>
+</body>
+</html>

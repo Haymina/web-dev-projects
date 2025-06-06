@@ -1,0 +1,62 @@
+*{
+  font-family: 'Courier New', Courier, monospace;
+}
+.container{
+  height:100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  background: linear-gradient(135deg, #120489, #ab42af);
+}
+.card{
+  width: 500px;
+  height: 300px;
+  color: black;
+  display: flex;
+  padding-left: 30px;
+  padding-top: 30px; 
+  border-radius: 30px;
+  flex-direction: column;
+  background-color: white;
+}
+h1{
+  font-size: 30px;
+  font-weight: 900;
+}
+.card img{
+  height: 30px;
+  width: 30px;
+}
+input{
+  width:250px;
+  height:40px;
+  font-size: 20px;
+  color: rgb(59, 57, 54);
+  border-radius: 20px;
+  background-color: rgb(164, 156, 156);
+  border: none;
+  padding-left: 15px;
+}
+#add{
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(241, 124, 7);
+  border:0;
+  font-size: 20px;
+  margin-left:-10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.delete-button{
+  width:10px;
+  height:10px;
+  border:none;
+  background-color: transparent;
+}
+
+
+

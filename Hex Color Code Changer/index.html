@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Trirong, sans-serif;
+      font-weight: bolder;
+    }
+    .background{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: blanchedalmond;
+    }
+    .content{
+      padding-bottom: 90px;
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1{
+      font-size: 50px;
+      padding-bottom: 20px;
+    }
+    button{
+      height:60px;
+      width: 350px;
+      font-size: 25px;
+      background-color: #f1f1f1;
+      align-self: center;
+      border: none;
+      color: black;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover{
+      background-color: #f1f1f1;
+      box-shadow: 0px 0px 10px 5px #f1f1f1;
+      transform: scale(1.01);
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="content">
+    <h1>Hex Color: <span class="hexValue"></span></h1>
+    <button>Change Color Hexically &#x1F60A; </button></div>
+  </div>
+  <script>
+
+    const colors= ["#065535", "#133337", "#1a535c", "#1f2f16", "#2b2d42", "#2c3e50", "#2e86de", "#3c6382", "#3d3d3d", "#3d5a80",
+      "#ffc0cb", "#b0e0e6", "#87ceeb", "#4682b4", "#4169e1", "#0000ff", "#0000cd", "#00008b", "#000080", "#191970", "#7b68ee",
+    ]
+    
+     document.querySelector('button').addEventListener("click", function(){
+      const colorValue = Math.floor(Math.random()*colors.length);
+      document.querySelector(".background").style.backgroundColor = colors[colorValue];
+      document.querySelector(".hexValue").innerHTML= colors[colorValue];
+    })
+  </script>
+</body>
+</html>
