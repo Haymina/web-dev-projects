@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .background{
+      width: 100%;
+      height:100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .changeColor{
+      width: 250px;
+      color: white;
+      font-size: 30px;
+      font-weight: bolder;
+      font-family: Trirong, sans-serif;
+      background-color: black;
+      height:50px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+
+    }
+    .changeColor:hover{
+      background-color: #333;
+      color:aliceblue;
+      box-shadow: 0px 5px 5px 5px rgba(161, 90, 90,0.5);
+    }
+  </style>
+</head>
+<body>
+ <div class="background">
+  <button class="changeColor">Change Color</button>
+ </div> 
+ <script>
+  const background = document.querySelector('.background');
+  const changeColor = document.querySelector('.changeColor');
+
+  const colors = ["#ff80ed", "#065535", "#133337", "#ffc0cb", "#008080",
+  "#ffd700", "#666666", "#ff4500", "#ff6347", "#ff69b4", "#ff7f50", "#ff8c00",];
+  
+
+  changeColor.addEventListener("click", function(){
+    const colorValue= Math.floor(Math.random()*colors.length);
+    background.style.backgroundColor = colors[colorValue];
+  })
+ </script>
+</body>
+</html>
