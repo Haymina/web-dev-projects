@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Counter</h1>
+    <div id="countNumber">
+    </div>
+    <div class="buttons">
+      <span><button id="add">Add</button></span>
+      <span><button id="minus">Minus</button></span>
+    </div>
+  </div>
+
+<script>
+  const number=document.querySelector('#countNumber');
+  const increase=document.querySelector('#add');
+  const decrease=document.querySelector('#minus');
+  number.innerHTML=0;
+  function changeColor(){
+  if (Number(number.innerHTML)>0){
+    number.style.color='green';
+  }
+  else if (Number(number.innerHTML)<0){
+    number.style.color='red';
+  }
+  else if (Number(number.innerHTML)===0){
+    number.style.color='white';
+  }}
+  increase.addEventListener("click", function(){
+    number.innerHTML=Number(number.innerHTML)+Number(1);
+    changeColor();
+  })
+  decrease.addEventListener("click", function(){
+    number.innerHTML=Number(number.innerHTML)-Number(1);
+    changeColor();
+  })
+</script>
+</body>
+</html>

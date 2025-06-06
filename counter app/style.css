@@ -1,0 +1,52 @@
+body{
+  background-color: rgba(58, 148, 148,0.9);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  font-size: 3rem;
+  color: white;
+}
+.container{
+  width: 500px;
+  height: 450px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 80%;
+
+}
+.buttons{
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#countNumber{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+#add{
+  background-color: rgb(73, 180, 216);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  width: 90px;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#minus{
+  background-color: rgb(33, 153, 162);
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 90px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
